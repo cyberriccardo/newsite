@@ -1,0 +1,87 @@
+
+Installation Guide
+
+onSite - Open Source Search Engine Optimization Tool
+=====================================================
+
+
+The onSite package can be installed and configured for any number of different server architectures. The two main components are the command-line scripts and the cgi user interface, which can be split across different directory trees or across different servers by adjusting the environment variables contained in the env.sh initialization script.
+
+
+The default installation creates a directory called - onsite - under the web server directory root. Separate subdirectories are created for configuration definitions, file list data files, php cgi programs, ajax javascript files and style sheets. The locations of these directories are defined in the env.sh initialization script found in the base directory.
+
+
+Installation Directories
+========================
+
+onsite
+  |
+  |__ config.init
+  |__ env.sh
+  |__ generate_filelists.sh
+  |
+  |__ ajax
+  |     |__ is1main.js
+  |
+  |__ config
+  |     |__ config1.sh (*)
+  |
+  |__ css
+  |     |__ is1main.css
+  |
+  |__ data
+  |     |__ complete-filelist (*)
+  |     |__ current-filelist (*)
+  |     |__ excluded-filelist (*)
+  |     |__ new-filelist (*)
+  |
+  |__ php
+  |     |__ config-edit.php
+  |     |__ config-read.php
+  |     |__ config-save.php
+  |     |__ filelist-edit.php
+  |     |__ filelist-save.php
+  |     |__ index.php
+  |     |__ sitemap-read.php
+  |     |__ sitemap-save.php
+  |
+  |__ sitemap
+        |__ urllist (*)
+        |__ sitemap.xml (*)
+
+        
+ (*) Generated files.
+ 
+
+
+Step-by-Step Installation:
+==========================
+
+1) Expand the installation tar file in the httpd server root directory. For most Apache httpd  servers this will will be: /var/www/html/<your domain>
+
+  tar -xzf onsite.tar.gz
+
+
+2) Edit the env.sh script to define the directories where the onSite programs and scripts are located.
+
+
+3) Copy the config.init script to the config directory, rename it with a '.sh' file extension, and then edit the new file to specify the default web server directory, domain name, and the names to be used for the data files. The config.init script is used as the starting point for all sitemap configurations that are created through the cgi user interface.
+
+
+4) Launch the cgi interface through your web browser. The default URL is: http://localhost/onsite/php/index.php when launched from the server itself, or http://<your domain>/onsite/php/index.html when launched from a remote workstation. The <your domain> URL used for remote access is defined in the env.sh configuration script. 
+
+
+Additional installation documentation is available on the project home page at: http://www.florin.com/onsite/index.html
+
+Released under the GNU General Public License version 3
+http://www.opensource.org/licenses/gpl-3.0.html
+
+
+
+
+
+ 
+
+
+
+

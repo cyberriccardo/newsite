@@ -1,0 +1,39 @@
+
+onSite - Open Source Search Engine Optimization Tool
+=====================================================
+
+
+Sitemaps are a very effective tool for search engine optimization. They inform search engines about which pages to include in your web site search results and they provide useful information about your site. 
+
+
+The toolset combines highly-configurable command line access with a web browser user interface. It is intended to provide a means to select and identify web documents to be included or excluded from sitemap.xml. It implements standards for sitemaps defined by sitemap.org and is designed to work independently or in conjunction with the widely used google-sitemap_gen sitemap generator.
+
+
+This toolset is designed to:
+
+ 
+ - Select the pages to include in your sitemap.
+ - Identify broken links in the current sitemap.
+ - Sort the sitemap view by page name or modification date.
+ - Specify the types of pages by their file extensions.
+ - Define the page priority and update frequency.
+ - Exclude specific pages and entire directories.
+ - Automatically generate sitemap.xml.
+ - Create multiple sitemaps for different domains or server directories.
+
+
+As an open source software project, this toolset is designed to utilize the advantages of shell scripting together with a web GUI and DOM/Ajax capabilities. It assumes a general familiarity with a web server environment based on a standard Linux/UNIX/FreeBSD/Apache configuration.  
+
+
+The package includes a set of server scripts, cgi processes, and DOM/Ajax/Javascript functions which can be adapted to specific web server environments. These processes generate data files in lieu of a database, and are designed for ease of use, ease of maintenance, and ease of customization.
+
+
+The command-line feature is designed to support multiple sitemap configurations as well as the ability to customize the server installation of the toolset itself. Data files and sitemaps can be generated automatically by placing the command-line scripts in the server crontab. JavaScript, Ajax and DOM functions (including event listeners, XMLHttpRequest, innerHTML, and insertBefore) interact with the web browser displays and with object-oriented PHP5 processes on the web server.
+
+
+Released under the GNU General Public License version 3
+http://www.opensource.org/licenses/gpl-3.0.html
+
+Project Home Page: http://www.florin.com/onsite/index.html
+
+

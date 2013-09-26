@@ -1,0 +1,427 @@
+/*
+
+CSS2 stylesheet for the onsite user interface.
+
+Written by Richard McMullen <mcmullen@florin.com>
+Released under the GNU General Public License version 3
+http://www.opensource.org/licenses/gpl-3.0.html
+
+Project Home Page: http://www.florin.com/onsite/index.html
+
+*/
+
+body {
+   padding: 0;
+   margin: 0 0 0 0;
+   background-color: #FFFFFF;
+   border: none;
+   position: relative;
+}
+
+/* main display classes and elements */
+
+.md1 {
+   clear: both;
+   border-left: 1px solid silver;
+   border-top: 1px solid silver;
+   border-right: 1px solid gray;
+   border-bottom: 1px solid gray;
+   position: relative;
+   padding: 0px;
+   margin: 0px;
+}
+
+.md2 {
+    padding: 1px 0 1px 0;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    height: auto;
+}
+.ms1 {
+    padding: 1px .1em 1px .4em;
+    margin: 0;
+    cursor: pointer;
+}
+.ms2 {
+    padding: 1px .1em 1px .4em;
+    margin: 0;
+}
+.md3 {
+   clear: both;
+   position: relative;
+   overflow: auto;
+   display: none;
+   background-color: white;
+}
+
+
+/* first section display elements */
+
+
+#selectmenu {
+    height: auto;
+}
+#selectbox {
+    margin: 0;
+    padding: 0;
+}
+#selectconfig {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+#selectform {
+    display: inline;
+}
+
+
+
+#statusmessage {
+    right: 5px;
+    position: absolute;
+}
+
+
+/* configuration section display elements */
+
+
+#configmenu {
+    background-color: #FFEBCD;
+}
+#confighide {
+    display: none;
+}
+#configdisplay {
+    margin-left: 1em;
+}
+
+/* file list section display elements */
+
+
+#listmenu {
+    background-color: #FFCC99;
+}
+#listhide {
+    display: none;
+}
+     
+#listdisplay a:hover {
+   color: blue;
+}  
+
+/* sitemap section display elements */
+
+
+#sitemenu {
+    background-color: #FFB66C;
+}
+#sitehide {
+    display: none;
+}
+#sitedisplay a {
+   text-decoration: none;
+   color: black;
+}      
+#sitedisplay a:hover {
+   color: blue;
+}  
+
+
+/* form display elements */
+
+form {
+    padding: 0;
+    margin: 0;
+}
+form.displayform {
+    position: relative;
+}
+.ibt {
+   margin: 0px;
+   padding: 0px;
+   border: none;
+   vertical-align: text-bottom;
+   cursor: pointer;
+}
+.fme {
+   clear: both;
+   text-align: right;
+   margin-right: 2em;
+   margin-bottom: 2em;
+   margin-top: 1em;
+   position: relative;
+}
+.fmb {
+   color: black;
+   cursor: pointer;
+   height: auto;
+   font-size: .8em;
+}
+.fmn {
+  font-size: 1em;  
+}
+.fmh {
+   text-align: left;
+   margin-left: 1em;
+   font-weight: bold;
+}
+
+/* configuration section detail elements */
+
+.cid {
+   text-align: right;
+   margin-right: 5em;
+}
+#cfnew {
+   margin: 0;
+   padding: 0;
+   display: none;
+   vertical-align: baseline;
+}
+.cinp {
+   font-family: "Courier New", Courier, monospace;
+   background-color: #DCDCDC;
+}
+
+/* file list section detail elements */
+
+
+.rc1 {
+   background-color: #FFFFFF;
+   height: 1.25em;
+   position: relative;
+}
+.rc5 {
+   height: 1.25em;
+   position: relative;
+   background-color: #FFEFD5;
+}
+
+
+
+.lpa {
+   text-decoration: none;
+   color: Black;
+   margin-left: .25em;
+}
+.lpar {
+   text-decoration: none;
+   color: Maroon;
+   margin-left: .25em;
+}
+.lpag {
+   text-decoration: none;
+   color: Green;
+   margin-left: .25em;
+}
+
+.lpu {
+   padding-left: 1em;
+}
+
+
+.lpd {
+   padding-left: .5em;
+}
+.spacer {
+   padding-left: 1em;
+   color: gray;
+}
+.expand {
+   padding-left: 1em;
+   color: gray;
+   display: none;
+   font-size: .8em;
+   font-weight: bold;
+   cursor: pointer;
+}
+.contract {
+   padding-left: 1em;
+   color: gray;
+   font-size: .8em;
+   font-weight: bold;
+   cursor: pointer;
+}
+.hidden {
+   display: none;
+}
+
+.zon {
+   margin: 0px;
+   padding: 0px;
+   background-color: lime;
+   border-top: .3em solid silver;
+   border-right: .3em solid silver;
+   border-bottom: .3em solid gray;
+   border-left: .3em solid gray;
+   height: 1.4em;
+   width: 1.4em;
+   position: relative;
+   cursor: pointer;
+}
+.zona {
+   margin: 0px;
+   padding: 0px;
+   background-color: Green;
+   border-top: .3em solid silver;
+   border-right: .3em solid silver;
+   border-bottom: .3em solid gray;
+   border-left: .3em solid gray;
+   height: 1.4em;
+   width: 1.4em;
+   position: relative;
+   cursor: pointer;
+}
+.zoff {
+   margin: 0px;
+   padding: 0px;
+   background-color: Maroon;
+   border-top: .3em solid silver;
+   border-right: .3em solid silver;
+   border-bottom: .3em solid gray;
+   border-left: .3em solid gray;
+   height: 1.4em;
+   width: 1.4em;
+   position: relative;
+   cursor: pointer;
+}
+.zoffa {
+   margin: 0px;
+   padding: 0px;
+   background-color: Red;
+   border-top: .3em solid silver;
+   border-right: .3em solid silver;
+   border-bottom: .3em solid gray;
+   border-left: .3em solid gray;
+   height: 1.4em;
+   width: 1.4em;
+   position: relative;
+   cursor: pointer;
+}
+/* sitemap section detail elements */
+
+.sth {
+   font-size: 1.1em;
+   font-weight: bold;
+   margin-bottom: .2em;
+   margin-top: .5em;
+}
+
+#sth2 {
+   display: none;
+}
+#str2 {
+   display: none;
+}
+
+.str {
+   height: 1.5em;
+   padding-top: .5em;
+   font-size: smaller;
+   font-weight: bold;
+	border-bottom: 1px solid silver;
+}
+.stu {
+   left: 4em;
+   position: relative;
+}
+.stuf {
+   cursor: pointer;
+}
+.stur {
+   cursor: pointer;
+}
+.stp {
+   right: 26em;
+   position: absolute;
+}
+.stf {
+   right: 14.5em;
+   position: absolute;
+}
+.stl {
+   right: 2.5em;
+   position: absolute;
+}
+.stlf {
+   cursor: pointer;
+}
+.stlr {
+   cursor: pointer;
+}
+
+.sc0 {
+   background-color: #FFEFD5;
+	border-bottom: 1px solid silver;
+   vertical-align: middle;
+   height: 1.25em;
+   position: relative;
+}
+.sc1 {
+   background-color: #FFFFFF;
+   border-bottom: 1px solid silver;
+   vertical-align: middle;
+   height: 1.25em;
+   position: relative;
+}
+
+
+.sms {
+   text-align: left;
+   margin-right: .5em;
+   margin-left: .5em;
+   width: 7em;
+} 
+.spp {
+   right: 18em;
+   margin-right: .5em;
+   position: absolute;
+}
+.spf {
+   right: 11.5em;
+   margin-right: .5em;
+   position: absolute;
+}
+.spl {
+   width: 10em;
+   right: .5em;
+   margin-right: .5em;
+   position: absolute;
+}
+.spu {
+   left: 2.8em;
+   margin-left: .5em;
+   position: absolute;
+   background-color: transparent;
+}
+.xon {
+   margin: 0px;
+   padding: 0px;
+   background-color: lime;
+   border-top: .3em solid silver;
+   border-right: .3em solid silver;
+   border-bottom: .3em solid gray;
+   border-left: .3em solid gray;
+   height: 1.4em;
+   width: 1.4em;
+   position: relative;
+   cursor: pointer;
+}
+
+.xoff {
+   margin: 0px;
+   padding: 0px;
+   background-color: Maroon;
+   border-top: .3em solid silver;
+   border-right: .3em solid silver;
+   border-bottom: .3em solid gray;
+   border-left: .3em solid gray;
+   height: 1.4em;
+   width: 1.4em;
+   position: relative;
+   cursor: pointer;
+}
+
